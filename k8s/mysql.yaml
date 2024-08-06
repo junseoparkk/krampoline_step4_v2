@@ -16,12 +16,10 @@ spec:
       containers:
         - name: mysql
           # 여러분의 mariadb image 주소를 입력해주세요.
-          image: krmp-d2hub-idock.9rum.cc/goorm/mysql:latest
+          image: krmp-d2hub-idock.9rum.cc/goorm/mysql:8.0.39
           env:
             - name: TZ
               value: Asia/Seoul
-            - name: MYSQL_USER
-              value: root
             - name: MYSQL_ROOT_PASSWORD
               value: mypassword
             - name: MYSQL_DATABASE
