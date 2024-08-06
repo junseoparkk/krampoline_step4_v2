@@ -21,7 +21,7 @@ spec:
             - name: TZ
               value: Asia/Seoul
             - name: MYSQL_ROOT_PASSWORD
-              value: mypassword
+              value: my-secret-pw
             - name: MYSQL_DATABASE
               value: krampoline
           volumeMounts:
@@ -63,5 +63,8 @@ spec:
     - port: 3306
 ---
  #kubectl apply -f k8s/mysql.yaml -n default
+ 
  #kubectl get pod -n default
  #kubectl apply -k k8s -n default
+ 
+ # kubectl logs mysql-0 -n default -> 로그 확인
