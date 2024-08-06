@@ -1,9 +1,6 @@
 namespace: default
 resources:
-  - nginx.yaml
   - mysql.yaml
-  - backend.yaml
-  - frontend.yaml
 configMapGenerator:
   - name: nginx
     files:
@@ -11,7 +8,3 @@ configMapGenerator:
   - name: init-db
     files:
       - configs/init.sql
-secretGenerator:
-  - name: my-secret-file
-    files:
-      - configs/secret.json

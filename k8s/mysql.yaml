@@ -66,3 +66,4 @@ spec:
 ---
  #kubectl apply -f k8s/mysql.yaml -n default
  #kubectl get pod -n default
+ #kubectl apply -k k8s -n default
