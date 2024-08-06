@@ -18,7 +18,7 @@ spec:
           env:
             - name: MYSQL_HOST
               value: mysql
-            - name: DB_PASSWORD
+            - name: MYSQL_ROOT_PASSWORD
               value: my-secret-pw
             - name: DATBASE_URL
               value: jdbc:mysql://mysql:3306/krampoline
