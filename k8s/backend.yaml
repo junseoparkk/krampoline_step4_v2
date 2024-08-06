@@ -20,7 +20,8 @@ spec:
               value: mysql
             - name: MYSQL_ROOT_PASSWORD
               value: my-secret-pw
-            - name: DATBASE_URL
+            - name: DATABASE_URL
+              value: jdbc:mysql://mysql-0:3306/krampoline
           resources:
             requests:
               memory: 1Gi
