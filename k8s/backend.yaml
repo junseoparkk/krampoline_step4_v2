@@ -19,11 +19,10 @@ spec:
           env:
             - name: TZ
               value: Asia/Seoul
+            - name: MYSQL_ROOT_PASSWORD
+              value: 
             - name: DATABASE_URL
               value: jdbc:mysql://mysql:3306/krampoline
-          volumeMounts:
-            - name: secret-volume
-              mountPath: /etc/secret
           resources:
             requests:
               memory: 1Gi
@@ -32,10 +31,6 @@ spec:
               # 해당 /api 가 안  뚫려있으면 Ready 가 안되요.
               path: /api/test
               port: 8080
-      volumes:
-        - name: secret-volume
-          secret:
-            secretName: my-secret-file
 ---
 apiVersion: v1
 kind: Service

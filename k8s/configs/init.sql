@@ -51,7 +51,7 @@ CREATE TABLE `users_tickets`
 
 INSERT INTO users (user_id, nickname, password) VALUES (1, 'jikky', '1234');
 INSERT INTO users (user_id, nickname, password) VALUES (2, 'kanuda', '1234');
-INSERT INTO users (user_id, nickname, password) VALUES (3, 'senny', '1234');
+INSERT INTO users (user_id, nickname, password) VALUES (3, 'seny', '1234');
 INSERT INTO users (user_id, nickname, password) VALUES (4, 'erica', '1234');
 INSERT INTO users (user_id, nickname, password) VALUES (5, 'jun', '1234');
 

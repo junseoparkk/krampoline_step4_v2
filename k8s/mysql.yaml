@@ -20,8 +20,6 @@ spec:
           env:
             - name: TZ
               value: Asia/Seoul
-            - name: MYSQL_HOST
-              value: user
             - name: MYSQL_ROOT_PASSWORD
               value: my-secret-pw
             - name: MYSQL_DATABASE
@@ -66,7 +64,7 @@ spec:
 ---
  #kubectl apply -f k8s/mysql.yaml -n default
  
- #kubectl get pod -n default
- #kubectl apply -k k8s -n default
- 
+ # kubectl apply -k k8s -n default
+ # kubectl get pod -n default
  # kubectl logs mysql-0 -n default -> 로그 확인
+ # kubectl delete [resource 이름] -n default [service 이름]
