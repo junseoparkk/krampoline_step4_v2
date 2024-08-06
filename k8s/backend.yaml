@@ -16,8 +16,6 @@ spec:
         - name: backend
           image: krmp-d2hub-idock.9rum.cc/dev-test/repo_2f22586f0513
           env:
-            - name: TZ
-              value: Asia/Seoul
             - name: DATABASE_URL
               value: jdbc:mysql://mysql:3306/ktbworld
           resources:
