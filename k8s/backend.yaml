@@ -14,15 +14,15 @@ spec:
     spec:
       containers:
         - name: backend
-          # 여러분의 backend image 주소를 입력해주세요.
           image: krmp-d2hub-idock.9rum.cc/dev-test/repo_2f22586f0513
-          env:
-            - name: TZ
-              value: Asia/Seoul
-            - name: MYSQL_ROOT_PASSWORD
-              value: 
-            - name: DATABASE_URL
-              value: jdbc:mysql://mysql:3306/krampoline
+            - name: DB_HOST
+              value: mysql
+            - name: DB_PORT
+              value: "3306"
+            - name: DB_USER
+              value: root
+            - name: DB_PASSWORD
+              value: "1234"
           resources:
             requests:
               memory: 1Gi
