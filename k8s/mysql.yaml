@@ -23,8 +23,8 @@ spec:
             - name: MYSQL_ROOT_PASSWORD
               value: rootpw
             - name: MYSQL_DATABASE
-	          value: ktbworld
-	        - name: MYSQL_USER
+              value: ktbworld
+            - name: MYSQL_USER
               value: krampoline
             - name: MYSQL_PASSWORD
               value: krampolinepw
