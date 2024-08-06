@@ -1,6 +1,5 @@
 namespace: default
 resources:
-  - frontend.yaml
   - backend.yaml
   - mysql.yaml
 configMapGenerator:

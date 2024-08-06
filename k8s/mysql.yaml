@@ -69,4 +69,5 @@ spec:
  # kubectl apply -k k8s -n default
  # kubectl get pod -n default
  # kubectl logs mysql-0 -n default -> 로그 확인
+ # kubectl apply -f k8s/backend.yaml -n default
  # kubectl delete [resource 이름] -n default [service 이름]
