@@ -16,14 +16,12 @@ spec:
         - name: backend
           image: krmp-d2hub-idock.9rum.cc/dev-test/repo_2f22586f0513
           env:
-            - name: DB_HOST
+            - name: MYSQL_HOST
               value: mysql
-            - name: DB_PORT
-              value: "3306"
-            - name: DB_USER
-              value: root
             - name: DB_PASSWORD
-              value: "1234"
+              value: my-secret-pw
+            - name: DATBASE_URL
+              value: jdbc:mysql://mysql:3306/krampoline
           resources:
             requests:
               memory: 1Gi
