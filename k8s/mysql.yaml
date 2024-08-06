@@ -20,6 +20,8 @@ spec:
           env:
             - name: TZ
               value: Asia/Seoul
+            - name: MYSQL_HOST
+              value: user
             - name: MYSQL_ROOT_PASSWORD
               value: my-secret-pw
             - name: MYSQL_DATABASE
