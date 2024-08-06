@@ -21,7 +21,13 @@ spec:
             - name: TZ
               value: Asia/Seoul
             - name: MYSQL_ROOT_PASSWORD
-              value: root
+              value: rootpw
+            - name: MYSQL_DATABASE
+	          value: ktbworld
+	        - name: MYSQL_USER
+              value: krampoline
+            - name: MYSQL_PASSWORD
+              value: krampolinepw
           volumeMounts:
             - mountPath: /var/lib/mysql
               name: data

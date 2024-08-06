@@ -18,8 +18,9 @@ CREATE TABLE `places`
 CREATE TABLE `tickets`
 (
     `ticket_id`     bigint AUTO_INCREMENT PRIMARY KEY,
+    `user_id`.      bigint NOT NULL,
     `category`      varchar(255) NOT NULL,
-    `is_closed`     boolean NOT NULL,
+    `status`     boolean NOT NULL,
     `title`         varchar(255) NOT NULL,
     `description`   varchar(255) NOT NULL,
     `created_at`    varchar(255) NOT NULL,
@@ -29,7 +30,10 @@ CREATE TABLE `tickets`
     `is_dry`        boolean NULL,
     `start_time`    datetime NULL,
     `end_time`      datetime NULL,
-    `destination`   varchar(255) NULL
+    `destination`   varchar(255) NULL,
+    `machine_id`    varchar(255) NOT NULL,
+    `account`       varchar(255) NULL,
+    FOREIGN KEY (`user_id`) REFERENCES `users`(`user_id`),
 );
 
 CREATE TABLE `users`
@@ -45,6 +49,7 @@ CREATE TABLE `users_tickets`
     `user_ticket_id` bigint AUTO_INCREMENT PRIMARY KEY,
     `user_id` bigint NOT NULL,
     `ticket_id` bigint NOT NULL,
+    `created_at`    varchar(255) NOT NULL,
     FOREIGN KEY (`user_id`) REFERENCES `users`(`user_id`),
     FOREIGN KEY (`ticket_id`) REFERENCES `tickets`(`ticket_id`)
 );
